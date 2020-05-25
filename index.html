@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>title</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li> <a href="#" id="blackHeading" >h2 zwart</a></li>
+                <li> <a href="#" id="comicSans" >comic sans</a></li>
+                <li> <a href="#" id="beep" >Beep</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    
+    <article>
+        <header>
+            <h2>Maecenas sed diam eget risus varius blandit.</h2>
+        </header>
+
+        <p>Maecenas sed <span>diam</span> eget risus <span>varius</span>  blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum <span>faucibus</span>  dolor auctor. <span>Curabitur</span>  blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper.</p>
+        <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+              <p>
+              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+              ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+              amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+              odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+              </p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+              <p>
+              Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+              purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+              velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+              suscipit faucibus urna.
+              </p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+              <p>
+              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+              </p>
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+              <p>
+              Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+              et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+              mauris vel est.
+              </p>
+              <p>
+              Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+              </p>
+            </div>
+          </div>
+           
+
+        <div class="foto1"><img src="/img/afmeting@2x.jpg" alt="imgtag"></div>
+        <div class="foto2"></div>
+        
+        <footer>
+            <p> Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        </footer>
+
+    </article>
+
+</main>
+
+
+
+
+<!-- plaats scripts voor het sluiten van de body -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>
+// hoe voeg je een plugin toe
+// 1. plugin toevoegen zoals hierboven de links met script src
+// 2. syntax?
+// 3. plugin init
+
+$( "#accordion" ).accordion();
+
+  // javascript komt hier
+  var fontColor = '#000';
+//   var fontFam = 'Roboto';
+ 
+ $( document ).ready(function() {
+     //console.log('hello MAMDT');
+    
+      $('#blackHeading').click(function(){
+         $('h2').css({'color':fontColor});
+     });
+
+     $('#comicSans').click(function(){
+         $(' h2 ').css({'font-family':'Roboto'});
+     });
+
+     $('#beep').click(function(){
+         $(' span ').css({'text-decoration':'line-through'});
+     });
+
+ });
+</script>
+
+
+</body>
+</html>
+
+</body>

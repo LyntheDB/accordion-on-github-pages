@@ -1,0 +1,111 @@
+/*  reset sheet */
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* responsive img snippet */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* css */
+
+
+
+body{
+    padding:0 20px 0 20px;
+    
+}
+.header{
+    height: 50px;
+    background-color: red
+}
+
+nav ul li{
+    float: left;
+    margin: 0 40px;
+    line-height: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    max-width: 984px;
+    margin: 0 auto 0 auto;
+}
+
+h2{
+    font-size: 3em;
+    color: red;
+    margin-bottom: 0.75em;
+}
+p{
+    margin-bottom: 1em;
+}
+
+footer{
+    clear: both;
+    background-color: lightgrey;
+}
+
+/* kitten */
+
+.foto1{ 
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    background-color: blueviolet;
+    float: left;
+
+}
+
+.foto2{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    float: left;
+    background-color: cyan;
+    background: url(../img/afmeting@2x.jpg);
+    background-size: 300px;
+
+}
+h3{
+    font-style: oblique;
+}
+
+/* accordion */
+
+.ui-accordion-header-active{
+    background-color: lightgrey;
+}
+
+@media only screen and (max-width: 900px) {
+    body, main{
+        background-color: grey;
+    }
+    
+    }
+  
+ @media only screen and (max-width:800px) {
+    .foto1, .foto2{
+        margin: 20px;
+        height: 200px;
+        width: 200px;
+        
+    }
+
+    img{
+        height: 200px;
+    }
+   
+    .foto2{
+        background-size: 200px;
+
+    }
+
+    }
+
